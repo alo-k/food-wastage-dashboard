@@ -14,10 +14,10 @@ st.title("🍽️ Local Food Wastage Management Dashboard")
 # ---------------------------
 @st.cache_data
 def load_data():
-    providers = pd.read_csv("data/providers_data.csv")
-    receivers = pd.read_csv("data/receivers_data.csv")
-    food = pd.read_csv("data/food_listings_data.csv")
-    claims = pd.read_csv("data/claims_data.csv")
+    providers = pd.read_csv("providers_data.csv")
+    receivers = pd.read_csv("receivers_data.csv")
+    food = pd.read_csv("food_listings_data.csv")
+    claims = pd.read_csv("claims_data.csv")
     return providers, receivers, food, claims
 
 providers, receivers, food, claims = load_data()
